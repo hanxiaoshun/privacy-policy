@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大狗智能提词器 · 隐私政策</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    color: #222;
+    line-height: 1.75;
+    background: #fff;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    border-bottom: 2px solid #f0b90b;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+  }
+  h2 {
+    font-size: 17px;
+    margin-top: 30px;
+    color: #1a1a1a;
+    border-left: 4px solid #f0b90b;
+    padding-left: 10px;
+  }
+  h3 {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #333;
+  }
+  p, ul, ol { margin: 8px 0; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  th { background: #fafafa; font-weight: 600; }
+  code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 13px;
+  }
+  .meta {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  .highlight {
+    background: #fff8e1;
+    border-left: 4px solid #f0b90b;
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .back-link:hover { text-decoration: underline; }
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+  }
+  a { color: #1a73e8; }
+</style>
+</head>
+<body>
+
+<a class="back-link" href="../">← 返回隐私政策中心</a>
+
+<h1>大狗智能提词器 · 隐私政策</h1>
+<p class="meta">版本：0.9.9　|　生效日期：2026-10-11　|　最近更新：2026-10-11</p>
+
+<div class="highlight">
+  <strong>核心承诺：</strong>本 App 不收集、不上传、不分析任何用户数据。
+</div>
+
+<h2>一、数据本地化清单</h2>
+<p>本 App 所有数据均保存在您的设备本地，不会上传到任何服务器。</p>
+<table>
+  <thead>
+    <tr><th>数据类型</th><th>存储位置</th><th>是否上传</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>文稿内容</td><td>App 私有目录 scripts.json</td><td>否</td></tr>
+    <tr><td>录音文件</td><td>App 私有目录 audio_recordings/</td><td>否</td></tr>
+    <tr><td>录像文件</td><td>本机相册 + 临时目录</td><td>否</td></tr>
+    <tr><td>拍摄/显示配置</td><td>设备本地存储</td><td>否</td></tr>
+    <tr><td>AI 识别模型</td><td>App 私有目录 ai_asr/</td><td>否</td></tr>
+    <tr><td>录音音频流</td><td>仅在内存中处理</td><td>否</td></tr>
+  </tbody>
+</table>
+
+<h2>二、网络访问说明</h2>
+<p>本 App <strong>唯一的网络访问是下载 AI 识别模型</strong>：</p>
+<ul>
+  <li>目标地址：github.com/k2-fsa/sherpa-onnx/releases</li>
+  <li>下载内容：模型压缩包（.tar.bz2）</li>
+  <li>触发方式：用户主动点击「下载」</li>
+  <li><strong>不上传任何数据</strong></li>
+</ul>
+<p>不下载模型时，本 App <strong>完全离线运行</strong>。</p>
+
+<h2>三、语音识别</h2>
+<ul>
+  <li>使用 sherpa-onnx 离线流式识别引擎，模型在本机运行</li>
+  <li>音频数据<strong>不离开设备</strong></li>
+  <li>识别结果仅用于本机界面显示，不保存、不上传</li>
+</ul>
+
+<h2>四、权限使用说明</h2>
+<p>本 App 申请的所有敏感权限，均在用户主动触发对应功能时申请，用户拒绝权限不阻塞其他功能。</p>
+
+<h3>核心功能权限</h3>
+<table>
+  <thead>
+    <tr><th>权限</th><th>用途</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>RECORD_AUDIO</td><td>AI 逐字跟读、语音跟随、独立录音</td></tr>
+    <tr><td>CAMERA</td><td>悬浮拍摄提词页的预览与录像</td></tr>
+    <tr><td>SYSTEM_ALERT_WINDOW</td><td>提词文字浮在其他 App 上方</td></tr>
+    <tr><td>FOREGROUND_SERVICE</td><td>悬浮层前台服务保持常驻</td></tr>
+    <tr><td>POST_NOTIFICATIONS</td><td>显示前台服务通知</td></tr>
+  </tbody>
+</table>
+
+<h3>网络权限</h3>
+<ul>
+  <li><code>INTERNET</code>：仅用于下载 AI 识别模型，不上传任何数据</li>
+</ul>
+
+<h3>存储权限</h3>
+<ul>
+  <li>将录像保存到系统相册，不读取其他文件</li>
+</ul>
+
+<h2>五、第三方 SDK 清单</h2>
+<table>
+  <thead>
+    <tr><th>SDK</th><th>用途</th><th>是否收集数据</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>sherpa-onnx</td><td>离线语音识别</td><td>否</td></tr>
+    <tr><td>audioplayers</td><td>背景音乐播放</td><td>否</td></tr>
+    <tr><td>record</td><td>麦克风采集</td><td>否</td></tr>
+    <tr><td>gal</td><td>保存到相册</td><td>否</td></tr>
+    <tr><td>shared_preferences</td><td>配置存储</td><td>否</td></tr>
+    <tr><td>path_provider</td><td>文件路径管理</td><td>否</td></tr>
+  </tbody>
+</table>
+<p>本 App <strong>无广告 SDK、无统计 SDK、无崩溃上报 SDK</strong>。</p>
+
+<h2>六、儿童隐私</h2>
+<p>本 App 不面向 13 岁以下儿童，不收集任何个人信息。</p>
+
+<h2>七、数据删除</h2>
+<p>卸载本 App 即删除所有本地数据。您也可以在 App 内手动删除文稿、录音、录像文件。</p>
+
+<h2>八、联系方式</h2>
+<p>如对本隐私政策有疑问，请联系：<strong>你的邮箱@example.com</strong></p>
+
+<h2>九、变更记录</h2>
+<ul>
+  <li>2026-10-11：初版</li>
+</ul>
+
+<footer>
+  © 2026 大狗智能提词器 · 保留所有权利
+</footer>
+
+</body>
+</html>
